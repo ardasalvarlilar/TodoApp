@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background: burlywood;
+}
+
+.container{
+  max-width: 600px;
+  background: #fff;
+  margin: 200px auto ;
+  padding: 10px 0px;
+  border-radius: 7px;
+}
+h1,h2
+{
+  text-align: center;
+}
+.input-div{
+  position: relative;
+  margin: 20px 0px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.input-div span{
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  transition: all .1s linear;
+}
+.container .input-div:has(input:focus) span{
+  top: 3px;
+  left: 25px;
+  font-size: 0.8rem;
+  color: burlywood;
+}
+#list-group{
+  list-style: none;
+  padding: 0px 20px;
+  margin: 10px 0px;
+}
+
+#list-group li{
+  background-color: rgba(222, 184, 135, 0.537);
+  margin-top: 5px;
+}
+
+.input-div input{
+  height: 50px;
+  width: calc(100% - 130px);
+  border-radius: 7px;
+  border: 1px solid #000;
+  outline: none;
+}
+.input-div input:focus{
+  border: 2px solid burlywood;
+}
+
+.input-div button{
+  padding: 7px 20px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 1px solid burlywood;
+  background: burlywood;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.input-div button:hover{
+  background-color: #fff;
+  color: burlywood;
+}
